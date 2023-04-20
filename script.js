@@ -6,7 +6,13 @@ menuicon.onclick = () =>{
     navbar.classList.toggle('active');    
 }
 
+let extra = document.querySelector('.hide');
+let extrabtn = document.querySelector('.rmbtn');
 
+extrabtn.onclick = () => {
+    extra.classList.toggle('show');
+    less.classList.toggle('show');
+}
 
 let sections = document.querySelectorAll('section');
 let navlinks = document.querySelectorAll('header nav a');
