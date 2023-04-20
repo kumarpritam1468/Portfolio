@@ -7,11 +7,19 @@ menuicon.onclick = () =>{
 }
 
 let extra = document.querySelector('.hide');
+let less = document.querySelector('#lessbtn');
 let extrabtn = document.querySelector('.rmbtn');
 
 extrabtn.onclick = () => {
     extra.classList.toggle('show');
     less.classList.toggle('show');
+    extrabtn.classList.toggle('hide');
+}
+
+less.onclick = () => {
+    extra.classList.toggle('show');
+    less.classList.remove('show');
+    extrabtn.classList.remove('hide');
 }
 
 let sections = document.querySelectorAll('section');

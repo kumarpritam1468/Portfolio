@@ -180,6 +180,10 @@ span {
     transition: .5s ease;
 }
 
+#lessbtn{
+    width: 12vw;
+}
+
 .btn:hover {
     box-shadow: none;
 }
