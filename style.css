@@ -59,6 +59,28 @@ section {
     color: var(--text-color);
     margin-left: 4rem;
     transition: .3s;
+    position: relative;
+    display: inline-block;
+    transition: all .3s ease;
+}
+
+#navbar a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--main-color);
+    border-radius: 4px;
+    scale: 0.1;
+    transform-origin: right;
+    transition: scale 0.3s;
+}
+
+#navbar a:hover::before {
+    scale: 1;
+    transform-origin: left;
 }
 
 #navbar a:hover,
